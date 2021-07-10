@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react"
 import axios from "axios"
 import useGlobalContext from "../../Global";
 import { BASE_URL } from "../../utils";
 import ProductCard from "../ProductCard"
 import { ReactComponent as ArrowLeft } from "../../assets/arrowLeft.svg"
 import { ReactComponent as ArrowRight } from "../../assets/arrowRight.svg"
+import Slider from "react-slick"
+import * as S from './styles'
 
 export default function ProductsContainer() {
   const { products, setProducts } = useGlobalContext()
@@ -18,19 +20,47 @@ export default function ProductsContainer() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])  
 
+  const settings = {
+    infinite: true,
+    speed: 500,
+    arrows: true,
+    prevArrow: <ArrowLeft />,
+    nextArrow: <ArrowRight />,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
+  }
+
+
   return (
-    <div>
+    <S.ProductsContainer>
       <div>
-        <p> Mais vendidos </p>
-        <div>divider</div>
+        <S.Title> Mais vendidos </S.Title>
+        <S.Divider/>
       </div> 
-      <div>
-        <ArrowLeft/>
-        <div>
-          { products.map(product => <ProductCard product={product} key={product.productId}/>) }
-        </div>
-        <ArrowRight/>
-      </div>
-    </div>
+      <S.SliderWrapper>
+        <Slider {...settings}>
+          { products.map(product => {
+              return <ProductCard product={product} key={product.productId}/>
+            })
+          }
+        </Slider>
+      </S.SliderWrapper>
+    </S.ProductsContainer>
   )
 }

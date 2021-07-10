@@ -59,6 +59,7 @@ export const Title = styled.h2`
 export const ListPrice = styled.p`
   margin: 0;
   margin-top: 7px;
+  height: 14px;
   font-size: 12px;
   text-decoration: line-through;
   color: #7a7a7a;
@@ -74,6 +75,7 @@ export const Price = styled.p`
 export const Installments = styled.p`
   margin: 0;
   margin-bottom: 8px;
+  height: 12px;
   font-size: 11px;
   color: #7a7a7a;
 `

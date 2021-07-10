@@ -8,6 +8,8 @@ export const NewsletterFormContainer = styled.section`
 `
 
 export const Title = styled.h3`
+  margin: 0;
+  margin-bottom: 16px;
   padding-top: 24px;
   text-align: center;
 `

@@ -3,6 +3,17 @@ import styled from "styled-components";
 export const Card = styled.div`
   width: 200px;
   height: 353px;
+  margin-bottom: 32px;
+  :hover {
+    .data {
+      background-color: #e6e8ea;
+      transition: 300ms;
+    }
+    .show-on-hover {
+      opacity: 1;
+      transition: 300ms;
+    }
+  }
 `
 
 
@@ -31,9 +42,53 @@ export const OfferTag = styled.div`
   }
 `
 
+export const ProductData = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 300ms;
+`
+
 export const Title = styled.h2`
+  margin: 4px 0;
   font-size: 12px;
   font-weight: 600;
   color: #7a7a7a;
-  /* margin-bottom: 5px; */
+`
+
+export const ListPrice = styled.p`
+  margin: 0;
+  margin-top: 7px;
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #7a7a7a;
+`
+
+export const Price = styled.p`
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+`
+
+export const Installments = styled.p`
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 11px;
+  color: #7a7a7a;
+`
+
+export const Button = styled.button`
+  opacity: 0;
+  margin-bottom: 15px;
+  width: 125px;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 300ms;
 `

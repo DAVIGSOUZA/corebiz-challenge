@@ -1,5 +1,6 @@
 import React from 'react'
 import Stars from "../Stars";
+import { toLocalCurrency } from "../../utils";
 import * as S from "./styles";
 
 export default function ProductCard({product}) {
@@ -14,14 +15,24 @@ export default function ProductCard({product}) {
           </S.OfferTag>
         ) : null}
       </S.ImgWrapper>
-      <div>
+
+      <S.ProductData className="data">
         <S.Title>{product.productName}</S.Title>
         <Stars starsReceived={product.stars}/> 
-        <p> {product.listPrice}</p>
-        <p> {product.price} </p>
-        {/* <p> {product.intallments[0]?.quantity} de {product.intallments[0]?.value}</p> */}
-      </div>
-      <button> COMPRAR </button>
+        <S.ListPrice>
+          {product.listPrice? `de ${toLocalCurrency(product.listPrice)}` : ''}
+        </S.ListPrice>
+        <S.Price> {`por ${toLocalCurrency(product.price)}`}</S.Price>
+        <S.Installments> 
+          { 
+            product.installments.length > 0
+            ? `ou em ${product.installments[0].quantity}
+              x de ${toLocalCurrency(product.installments[0].value)} ` 
+            : ''
+          }
+        </S.Installments>
+        <S.Button className="show-on-hover"> COMPRAR </S.Button>
+      </S.ProductData>
     </S.Card>
   )
 }

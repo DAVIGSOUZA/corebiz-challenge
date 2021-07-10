@@ -17,9 +17,7 @@ export default function Stars({starsReceived}) {
       stars.push('outlined') 
     }
   }
-
-  console.log(stars)
-
+  
   return (
     <S.StarsWrapper>
       { stars.map((star, index) => {

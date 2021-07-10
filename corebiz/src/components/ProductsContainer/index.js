@@ -13,9 +13,9 @@ export default function ProductsContainer() {
     axios.get(`${BASE_URL}products`)
       .then(res => {
         setProducts(res.data)
-        console.log(res.data)
       })
       .catch(err => console.log(err))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])  
 
   return (

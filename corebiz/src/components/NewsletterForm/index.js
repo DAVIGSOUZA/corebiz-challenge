@@ -46,35 +46,37 @@ export default function NewsletterForm () {
     <S.NewsletterFormContainer>
       {showForm ? (
         <div>
-          <h3>
+          <S.Title>
             Participe de nossas news com promoções e novidades!
-          </h3>
+          </S.Title>
           <S.FormWrapper onSubmit={submit}>
             <div>
-              <input 
+              <S.FormInput 
                 type="text" 
                 placeholder="Digite seu nome" 
                 onChange={e => setName(e.target.value)}
+                error = {false}
               />
-              <span> {errors.name} </span>
+              <S.ErrorMessage> {errors.name} </S.ErrorMessage>
             </div>
             <div>
-              <input 
+              <S.FormInput 
                 type="email" 
                 placeholder="Digite seu email" 
                 onChange={e => setEmail(e.target.value)}
+                error = {false}
               />
-              <span> {errors.email} </span>
+              <S.ErrorMessage> {errors.email} </S.ErrorMessage>
             </div>
-            <button type="submit">Eu quero!</button>
+            <S.Button type="submit">Eu quero!</S.Button>
           </S.FormWrapper>
         </div>
       ) : (
-        <div>
+        <S.FeedbackContainer>
           <h3>Seu e-mail foi cadastrado com sucesso!</h3>
           <h4>A partir de agora você receberá as novidades e ofertas exclusivas.</h4>
-          <button onClick={() => setShowForm(true)}>Cadastrar novo e-mail</button>
-        </div>        
+          <S.Button large onClick={() => setShowForm(true)}>Cadastrar novo e-mail</S.Button>
+        </S.FeedbackContainer>        
       )}
     </S.NewsletterFormContainer>
   )

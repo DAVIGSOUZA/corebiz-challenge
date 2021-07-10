@@ -18,6 +18,7 @@ export const Divider = styled.div`
 `
 
 export const SliderWrapper = styled.div`
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
 `

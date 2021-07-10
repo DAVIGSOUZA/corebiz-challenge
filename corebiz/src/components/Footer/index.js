@@ -1,8 +1,8 @@
 import React from 'react'
-import { ReactComponent as LogosFooter } from "../../assets/logos-footer.svg";
-import { ReactComponent as EmailIcon } from "../../assets/icon-email.svg";
-import { ReactComponent as PhoneIcon } from "../../assets/icon-phone.svg";
-import * as S from "./styles";
+import { ReactComponent as LogosFooter } from "../../assets/logos-footer.svg"
+import { ReactComponent as EmailIcon } from "../../assets/icon-email.svg"
+import { ReactComponent as PhoneIcon } from "../../assets/icon-phone.svg"
+import * as S from "./styles"
 
 export default function Footer() {
   return (

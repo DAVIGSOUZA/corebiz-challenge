@@ -3,7 +3,7 @@ import {ReactComponent as Logo} from "../../assets/logo.svg"
 import {ReactComponent as SearchIcon} from "../../assets/search.svg"
 import {ReactComponent as UserIcon} from "../../assets/user.svg"
 import {ReactComponent as CartIcon} from "../../assets/cart.svg"
-import * as S from "./styled"
+import * as S from "./styles"
 
 export default function Header({amount}) {
   return (

@@ -14,7 +14,6 @@ export const AddressWrapper = styled.address`
   font-style: normal;
   font-size: 13px;
   line-height: 25px;
-  text-align: start;
 `
 
 export const Title = styled.p`

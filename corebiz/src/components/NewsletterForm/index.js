@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { emailRegex, BASE_URL } from "../../utils";
-import axios from "axios";
+import axios from "axios"
+import { emailRegex, BASE_URL } from "../../utils"
+import * as S from "./styles"
+
 
 export default function NewsletterForm () {
   const [name, setName] = useState('')
@@ -22,7 +24,7 @@ export default function NewsletterForm () {
 
     setErrors(error)
 
-    return error.name?.length || error.email?.length ? true : false
+    return error.name.length || error.email.length ? true : false
   }
 
   const submit = (e) => {
@@ -41,13 +43,13 @@ export default function NewsletterForm () {
   }
   
   return (
-    <>
+    <S.NewsletterFormContainer>
       {showForm ? (
         <div>
           <h3>
             Participe de nossas news com promoções e novidades!
           </h3>
-          <form onSubmit={submit}>
+          <S.FormWrapper onSubmit={submit}>
             <div>
               <input 
                 type="text" 
@@ -65,7 +67,7 @@ export default function NewsletterForm () {
               <span> {errors.email} </span>
             </div>
             <button type="submit">Eu quero!</button>
-          </form>
+          </S.FormWrapper>
         </div>
       ) : (
         <div>
@@ -74,6 +76,6 @@ export default function NewsletterForm () {
           <button onClick={() => setShowForm(true)}>Cadastrar novo e-mail</button>
         </div>        
       )}
-    </>
+    </S.NewsletterFormContainer>
   )
 }

@@ -7,7 +7,7 @@ import { ReactComponent as ArrowLeft } from "../../assets/arrowLeft.svg"
 import { ReactComponent as ArrowRight } from "../../assets/arrowRight.svg"
 
 export default function ProductsContainer() {
-  const { setProducts } = useGlobalContext()
+  const { products, setProducts } = useGlobalContext()
 
   useEffect(() => {
     axios.get(`${BASE_URL}products`)
@@ -27,7 +27,7 @@ export default function ProductsContainer() {
       <div>
         <ArrowLeft/>
         <div>
-          <ProductCard/>
+          { products.map(product => <ProductCard product={product} key={product.productId}/>) }
         </div>
         <ArrowRight/>
       </div>

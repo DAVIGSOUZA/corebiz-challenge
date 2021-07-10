@@ -12,7 +12,7 @@ export default function Slide() {
           e-commerce?
         </S.SlideSubtitle>
       </div>
-      <img src={bannerImg} alt="Mão masculina segurando cartão de crédito" />
+      <img src={bannerImg} alt="Mão masculina segurando cartão de crédito em frente ao computador" />
     </S.Slide>
   )
 }

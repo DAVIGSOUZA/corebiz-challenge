@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const NewsletterFormContainer = styled.section`
   width: 100vw;
-  height: 150px;
+  min-height: 150px;
   background-color: #f2f2f2;
   font-family: "Lato", sans-serif;
 `
@@ -16,11 +16,12 @@ export const Title = styled.h3`
 
 export const FormWrapper = styled.form`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 `
 
 export const FormInput = styled.input`
-  width: 280px;
+  width: 246px;
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 17px;
@@ -34,9 +35,11 @@ export const FormInput = styled.input`
 `
 
 export const ErrorMessage = styled.p`
-  font-size: 12px;
-  color: #D7182A;
+  margin: 0;
   margin-top: 8px;
+  font-size: 12px;
+  height: 14px;
+  color: #D7182A;
 `
 
 export const Button = styled.button`
@@ -53,6 +56,10 @@ export const Button = styled.button`
   :hover {
     background-color: #333333;
   }
+  @media (max-width: 600px) {
+    width: 280px;
+    margin: 16px 0;
+  } 
 `
 
 export const FeedbackContainer = styled.div`
@@ -72,6 +79,11 @@ export const FeedbackContainer = styled.div`
     font-weight: 400;
     color: #333333;
   }
+  @media (max-width: 600px) {
+    width: 300px;
+    height: 276px;
+    margin: 0 auto;
+  } 
 `
 
 

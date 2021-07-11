@@ -23,28 +23,39 @@ export default function Footer() {
         </S.AddressWrapper>
 
         <S.ContactWrapper>
-          <S.FooterButton>
-            <EmailIcon/>
-            <span>
-              ENTRE EM CONTATO
-            </span>
-          </S.FooterButton>
-          <S.FooterButton>
-            <PhoneIcon/>
-            <span>
-              FALE COM O NOSSO <br/> 
-              CONSULTOR ONLINE
-            </span>
-          </S.FooterButton>
+
+          <a href="https://www.linkedin.com/in/davi-garcia-bb256836/" target="_blank">
+            <S.FooterButton>
+              <EmailIcon/>
+              <span>
+                ENTRE EM CONTATO
+              </span>
+            </S.FooterButton>
+          </a>
+
+          <a href="https://www.linkedin.com/in/davi-garcia-bb256836/" target="_blank">
+            <S.FooterButton>
+              <PhoneIcon/>
+              <span>
+                FALE COM O NOSSO <br/> 
+                CONSULTOR ONLINE
+              </span>
+            </S.FooterButton>
+          </a>
+
         </S.ContactWrapper>
 
         <S.LogosWrapper>
-          <div>
-            <span>Created by</span>
-            <br/>
-            <CorebizLogo/>
-          </div>
-          <VtexLogo/>
+          <a href="https://www.corebiz.ag/pt/" target="_blank">
+            <div>
+              <span>Created by</span>
+              <br/>
+              <CorebizLogo/>
+            </div>
+          </a>
+          <a href="https://vtex.com/br-pt/" target="_blank">
+            <VtexLogo/>
+          </a>
         </S.LogosWrapper>
 
       </S.ContentWrapper>

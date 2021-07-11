@@ -6,3 +6,7 @@ export const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(
 export const toLocalCurrency = (price) => {
   return (`R$ ${(price / 100).toFixed(2)}`).replace('.', ',')
 }
+
+export const challengeMessage = () => {
+  alert('Funcionalidade fora do escopo do desafio')
+}

@@ -38,6 +38,7 @@ export const SearchWrapper = styled.div`
     position: absolute;
     top: 4px;
     right: 0;
+    cursor: pointer;
   }
   @media (max-width: 600px) {
     width: 100%;

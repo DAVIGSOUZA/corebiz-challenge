@@ -66,12 +66,14 @@ export const ProductData = styled.div`
 `
 
 export const Title = styled.h2`
+  width: 100%;
   margin: 4px 0;
   font-size: 12px;
   font-weight: 600;
   color: #7a7a7a;
   @media (max-width: 600px) {
     font-size: 10px;
+    height: 30px;
   } 
 `
 

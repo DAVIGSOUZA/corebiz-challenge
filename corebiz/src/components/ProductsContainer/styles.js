@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const ProductsContainer = styled.section`
-  width: 100vw;
+  width: calc(100% - 20px) !important;
+  overflow: hidden;
+  margin-left: 20px;
+
 `
 
 export const ContentWrapper = styled.div`
@@ -28,6 +31,26 @@ export const Divider = styled.div`
 export const SliderWrapper = styled.div`
   width: 100%;
   max-width: 1200px;
-  height: 400px;
+  height: 350px;
   margin: 0 auto;
+  @media (max-width: 600px) {
+    height: 300px;
+    & .slick-dots {
+      bottom: 4px;
+      & .slick-active {
+        button {
+          background-color: #f8475f;
+        }
+      }
+      button {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #bdbdbd;
+        ::before {
+          content: "";
+        }
+      }
+    }
+  } 
 `

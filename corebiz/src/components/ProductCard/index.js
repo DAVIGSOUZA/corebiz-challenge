@@ -6,9 +6,14 @@ import * as S from "./styles";
 
 
 export default function ProductCard({product}) {
-  const { amount , setAmount } = useGlobalContext()
+  const { setAmount } = useGlobalContext()
 
-  let actualAmount = amount
+  const addToCart = () => {
+    setAmount((prevState) => {
+      localStorage.setItem('amount', prevState + 1)
+      return prevState + 1
+    })
+  }
 
   return (
     <S.Card>
@@ -39,7 +44,7 @@ export default function ProductCard({product}) {
         </S.Installments>
         <S.Button 
           className="show-on-hover" 
-          onClick={() => setAmount(actualAmount++)}
+          onClick={addToCart}
         > 
           COMPRAR 
         </S.Button>

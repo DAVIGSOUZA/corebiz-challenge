@@ -3,7 +3,7 @@ import React, { useState, useContext, createContext } from 'react'
 const GlobalContext = createContext()
 
 export const GlobalProvider = ({children}) => {
-  const [amount, setAmount] = useState(0)
+  const [amount, setAmount] = useState(Number(localStorage.getItem('amount')) || 0)
   const [products, setProducts] = useState([])
 
   return(

@@ -24,7 +24,10 @@ export default function Footer() {
 
         <S.ContactWrapper>
 
-          <a href="https://www.linkedin.com/in/davigsouza" target="_blank" rel="https://corebiz-challenge-mu.vercel.app/">
+          <a href="https://www.linkedin.com/in/davigsouza" 
+            target="_blank" 
+            rel="https://corebiz-challenge-mu.vercel.app/"
+          >
             <S.FooterButton>
               <EmailIcon/>
               <span>
@@ -33,7 +36,10 @@ export default function Footer() {
             </S.FooterButton>
           </a>
 
-          <a href="https://www.linkedin.com/in/davigsouza" target="_blank" rel="https://corebiz-challenge-mu.vercel.app/">
+          <a href="https://www.linkedin.com/in/davigsouza" 
+            target="_blank" 
+            rel="https://corebiz-challenge-mu.vercel.app/"
+          >
             <S.FooterButton>
               <PhoneIcon/>
               <span>
@@ -46,16 +52,25 @@ export default function Footer() {
         </S.ContactWrapper>
 
         <S.LogosWrapper>
-          <a href="https://www.corebiz.ag/pt/" target="_blank" rel="https://corebiz-challenge-mu.vercel.app/">
+          
+          <a href="https://www.corebiz.ag/pt/" 
+            target="_blank" 
+            rel="https://corebiz-challenge-mu.vercel.app/"
+          >
             <div>
               <span>Created by</span>
               <br/>
               <CorebizLogo/>
             </div>
           </a>
-          <a href="https://vtex.com/br-pt/" target="_blank" rel="https://corebiz-challenge-mu.vercel.app/">
+
+          <a href="https://vtex.com/br-pt/" 
+            target="_blank" 
+            rel="https://corebiz-challenge-mu.vercel.app/"
+          >
             <VtexLogo/>
           </a>
+
         </S.LogosWrapper>
 
       </S.ContentWrapper>

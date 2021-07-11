@@ -69,5 +69,6 @@ export const LogosWrapper = styled.div`
   }
   @media (max-width: 600px) {
     justify-content: space-between;
+    margin-bottom: 16px;
   } 
 `

@@ -2,7 +2,7 @@ import React from 'react'
 import { ReactComponent as EmailIcon } from "../../assets/icon-email.svg"
 import { ReactComponent as PhoneIcon } from "../../assets/icon-phone.svg"
 import { ReactComponent as VtexLogo } from "../../assets/vtex-logo.svg"
-import { ReactComponent as CodebizLogo } from "../../assets/codebiz-white.svg"
+import { ReactComponent as CorebizLogo } from "../../assets/corebiz-white.svg"
 
 import * as S from "./styles"
 
@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <span>Created by</span>
             <br/>
-            <CodebizLogo/>
+            <CorebizLogo/>
           </div>
           <VtexLogo/>
         </S.LogosWrapper>

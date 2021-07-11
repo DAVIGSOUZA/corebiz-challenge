@@ -14,6 +14,10 @@ export const Card = styled.div`
       transition: 300ms;
     }
   }
+  @media (max-width: 600px) {
+    width: 120px;
+    height: 263px;
+  } 
 `
 
 export const ImgWrapper = styled.div`
@@ -39,6 +43,19 @@ export const OfferTag = styled.div`
     font-weight: 900;
     color: #fff;
   }
+  @media (max-width: 600px) {
+    div {
+      border-bottom: 50px solid transparent;
+      border-right: 50px solid #f8475f;
+    }
+    span {
+      top: 8px;
+      right: 6px;
+      font-size: 10px;
+      font-weight: 600;
+      color: #fff;
+    }
+  } 
 `
 
 export const ProductData = styled.div`
@@ -53,6 +70,9 @@ export const Title = styled.h2`
   font-size: 12px;
   font-weight: 600;
   color: #7a7a7a;
+  @media (max-width: 600px) {
+    font-size: 10px;
+  } 
 `
 
 export const ListPrice = styled.p`
@@ -62,6 +82,9 @@ export const ListPrice = styled.p`
   font-size: 12px;
   text-decoration: line-through;
   color: #7a7a7a;
+  @media (max-width: 600px) {
+    font-size: 11px;
+  } 
 `
 
 export const Price = styled.p`
@@ -69,6 +92,9 @@ export const Price = styled.p`
   font-size: 18px;
   font-weight: 700;
   color: #000;
+  @media (max-width: 600px) {
+    font-size: 16px;
+  } 
 `
 
 export const Installments = styled.p`
@@ -82,7 +108,7 @@ export const Installments = styled.p`
 export const Button = styled.button`
   opacity: 0;
   margin-bottom: 15px;
-  width: 125px;
+  width: 120px;
   height: 32px;
   border: none;
   border-radius: 5px;
@@ -95,4 +121,7 @@ export const Button = styled.button`
   :hover {
     background-color: #333333;
   }
+  @media (max-width: 600px) {
+    opacity: 1;
+  } 
 `

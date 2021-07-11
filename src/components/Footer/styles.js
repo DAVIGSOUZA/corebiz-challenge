@@ -3,6 +3,12 @@ import styled from "styled-components"
 export const Footer = styled.footer`
   width: 100vw;
   background-color: #000;
+  a {
+    text-decoration: none;
+    :visited {
+      color: unset;
+    }
+  }
 `
 
 export const ContentWrapper = styled.div`

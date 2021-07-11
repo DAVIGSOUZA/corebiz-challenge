@@ -20,6 +20,12 @@ export const CarouselContainer = styled.div`
       }
     }
   }
+  @media (max-width: 600px) {
+    height: 192px;
+    & .slick-dots {
+      bottom: 13px;
+    }
+  } 
 `
 
 // slide styles
@@ -28,23 +34,38 @@ export const Slide = styled.div`
   height: 430px;
   color: #fff;
   background-image: url(${(props) => props.img});
+  background-position: center;
   background-size: cover;
+  @media (max-width: 600px) {
+    height: 192px;
+    background-image: url(${(props) => props.mobileImg});
+  } 
 `
 
 export const SlideContent = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 150px;
+    @media (max-width: 600px) {
+      padding-top: 32px;
+      padding-left: 8px;
+  } 
 `
 
 export const SlideTitle = styled.p `
   margin: 0;
   font-size: 30px;
   font-weight: 700;
+  @media (max-width: 600px) {
+    font-size: 20px;
+  } 
 `
 
 export const SlideSubtitle = styled.p `
   margin: 0;
   font-size: 45px;
   font-weight: 900;
+  @media (max-width: 600px) {
+    font-size: 25px;
+  } 
 `

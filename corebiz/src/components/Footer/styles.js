@@ -13,6 +13,9 @@ export const ContentWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }   
 `
 
 export const AddressWrapper = styled.address`
@@ -64,4 +67,7 @@ export const LogosWrapper = styled.div`
   span {
     font-size: 10px;
   }
+  @media (max-width: 600px) {
+    justify-content: space-between;
+  } 
 `

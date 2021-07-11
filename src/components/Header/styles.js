@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Header = styled.header`
   max-width: 1200px;
   height: 80px;
-  margin: 16px 20px;
+  margin: 16px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,6 +11,7 @@ export const Header = styled.header`
     display: none;
   }
   @media (max-width: 990px) {
+    padding: 0 20px;
     flex-direction: column;
     .mobile-hide {
       display: none;

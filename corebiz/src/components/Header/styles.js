@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
 export const Header = styled.header`
-  width: 100%;
+  max-width: 1200px;
+  height: 80px;
+  margin: 16px auto;
   display: flex;
-  margin: 16px 0;
   justify-content: space-between;
   align-items: center;
 `
@@ -16,7 +17,7 @@ export const MenuWrapper = styled.div`
 `
 
 export const SearchWrapper = styled.div`
-  width: 40%;
+  width: 60%;
   min-width: 280px;
   margin: 0 32px;
   height: 23px;

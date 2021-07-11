@@ -1,7 +1,15 @@
 import styled from "styled-components";
 
 export const ProductsContainer = styled.section`
-  width: 100%;
+  width: 99vw;
+`
+
+export const ContentWrapper = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 
 export const Title = styled.p`
@@ -19,6 +27,7 @@ export const Divider = styled.div`
 
 export const SliderWrapper = styled.div`
   width: 100%;
-  max-width: 1240px;
+  max-width: 1200px;
+  height: 400px;
   margin: 0 auto;
 `

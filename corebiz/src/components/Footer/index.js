@@ -7,36 +7,40 @@ import * as S from "./styles"
 export default function Footer() {
   return (
     <S.Footer>
-      <S.AddressWrapper>
-        <S.Title>Localização</S.Title>
-        <S.Divider/>
-        <p>
-          Avenida Andrômeda, 2000. Bloco 6 e 8 <br/>
-          Alphavile SP <br/>
-          brasil@corebiz.ag <br/>
-          +55 11 3090 1039
-        </p>
-      </S.AddressWrapper>
+      <S.ContentWrapper>
+        
+        <S.AddressWrapper>
+          <S.Title>Localização</S.Title>
+          <S.Divider/>
+          <p>
+            Avenida Andrômeda, 2000. Bloco 6 e 8 <br/>
+            Alphavile SP <br/>
+            brasil@corebiz.ag <br/>
+            +55 11 3090 1039
+          </p>
+        </S.AddressWrapper>
 
-      <S.ContactWrapper>
-        <S.FooterButton>
-          <EmailIcon/>
-          <span>
-            ENTRE EM CONTATO
-          </span>
-        </S.FooterButton>
-        <S.FooterButton>
-          <PhoneIcon/>
-          <span>
-            FALE COM O NOSSO <br/> 
-            CONSULTOR ONLINE
-          </span>
-        </S.FooterButton>
-      </S.ContactWrapper>
+        <S.ContactWrapper>
+          <S.FooterButton>
+            <EmailIcon/>
+            <span>
+              ENTRE EM CONTATO
+            </span>
+          </S.FooterButton>
+          <S.FooterButton>
+            <PhoneIcon/>
+            <span>
+              FALE COM O NOSSO <br/> 
+              CONSULTOR ONLINE
+            </span>
+          </S.FooterButton>
+        </S.ContactWrapper>
 
-      <div>
-        <LogosFooter/>
-      </div>
+        <div>
+          <LogosFooter/>
+        </div>
+
+      </S.ContentWrapper>
     </S.Footer>
   )
 }

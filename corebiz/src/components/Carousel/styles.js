@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CarouselContainer = styled.div`
   width: 100%;
-  height: 430px;
+  max-height: 430px;
   & .slick-dots {
     bottom: 37px;
     & .slick-active {
@@ -24,27 +24,23 @@ export const CarouselContainer = styled.div`
 
 // slide styles
 export const Slide = styled.div`
-  position: relative;
-  width: 100%;
+  width: 99vw;
   height: 430px;
   color: #fff;
-  img {
-    width: 100%;
-    height: 430px;
-    object-fit: cover;
-  }
-  div {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-  }
+  background-image: url(${(props) => props.img});
+  background-size: cover;
+`
+
+export const SlideContent = styled.div`
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 150px;
 `
 
 export const SlideTitle = styled.p `
   margin: 0;
   font-size: 30px;
   font-weight: 700;
-
 `
 
 export const SlideSubtitle = styled.p `

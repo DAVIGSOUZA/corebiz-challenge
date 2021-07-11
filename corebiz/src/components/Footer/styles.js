@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 export const Footer = styled.footer`
-  width: 100%;
+  width: 99vw;
+  background-color: #000;
+`
+
+export const ContentWrapper = styled.div`
+  max-width: 1200px;
   min-height: 213px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
   color: #fff;
 `
 

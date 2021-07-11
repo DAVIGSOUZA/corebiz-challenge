@@ -32,7 +32,9 @@ export default function ProductsContainer() {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 3
+          slidesToShow: 3,
+          arrows: false,
+          dots: true
         }
       },
       {
@@ -49,18 +51,20 @@ export default function ProductsContainer() {
 
   return (
     <S.ProductsContainer>
-      <div>
-        <S.Title> Mais vendidos </S.Title>
-        <S.Divider/>
-      </div> 
-      <S.SliderWrapper>
-        <Slider {...settings}>
-          { products.map(product => {
-              return <ProductCard product={product} key={product.productId}/>
-            })
-          }
-        </Slider>
-      </S.SliderWrapper>
+      <S.ContentWrapper>
+        <div>
+          <S.Title> Mais vendidos </S.Title>
+          <S.Divider/>
+        </div> 
+        <S.SliderWrapper>
+          <Slider {...settings}>
+            { products.map(product => {
+                return <ProductCard product={product} key={product.productId}/>
+              })
+            }
+          </Slider>
+        </S.SliderWrapper>
+      </S.ContentWrapper>
     </S.ProductsContainer>
   )
 }

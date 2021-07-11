@@ -4,15 +4,20 @@ import Carousel from "../../components/Carousel"
 import ProductsContainer from "../../components/ProductsContainer"
 import NewsletterForm from "../../components/NewsletterForm"
 import Footer from "../../components/Footer"
+import { HomeContainer } from "./styles";
 
 export default function HomePage() {
   return (
-    <div>
-      <Header/>
-      <Carousel/>
-      <ProductsContainer/>
-      <NewsletterForm/>
-      <Footer/>
-    </div>
+    <HomeContainer>
+      <div>
+        <Header/>
+        <Carousel/>
+        <ProductsContainer/>
+      </div>
+      <div>
+        <NewsletterForm/>
+        <Footer/>
+      </div>
+    </HomeContainer>
   )
 }

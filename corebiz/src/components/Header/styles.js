@@ -3,23 +3,35 @@ import styled from "styled-components"
 export const Header = styled.header`
   max-width: 1200px;
   height: 80px;
-  margin: 16px auto;
+  margin: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .display-none {
+    display: none;
+  }
+  @media (max-width: 990px) {
+    flex-direction: column;
+    .mobile-hide {
+      display: none;
+    }
+    .mobile-show {
+      display: block;
+    }
+  } 
 `
 
 export const MenuWrapper = styled.div`
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 `
 
 export const SearchWrapper = styled.div`
   width: 60%;
   min-width: 280px;
-  margin: 0 32px;
+  /* margin: 0 32px; */
   height: 23px;
   position: relative;
   .search-icon {
@@ -27,6 +39,9 @@ export const SearchWrapper = styled.div`
     top: 4px;
     right: 0;
   }
+  @media (max-width: 600px) {
+    width: 100%;
+  } 
 `
 
 export const SearchInput = styled.input`
@@ -39,7 +54,7 @@ export const SearchInput = styled.input`
 export const UserWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin: 0 16px;
+  /* margin: 0 16px; */
   cursor: pointer;
   span {
     margin-left: 4px;
@@ -51,7 +66,7 @@ export const UserWrapper = styled.div`
 export const CartWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 16px;
+  /* margin-left: 16px; */
   cursor: pointer;
   span {
     width: 14px;
@@ -68,6 +83,21 @@ export const CartWrapper = styled.div`
   }
 `
 
+export const MobileMenu = styled.div`
+  position: relative;
+  cursor: pointer;
+`
+
+export const MobileMenuItem = styled.div`
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 140px;
+  padding: 8px 4px;
+  background-color: #fff;
+  border: 1px solid #000;
+  z-index: 1;
+`
 
 
 

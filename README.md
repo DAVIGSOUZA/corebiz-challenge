@@ -42,7 +42,7 @@ Desenvolver uma aplicação HTML5 + CSS3 + JS baseando-se no [LAYOUT](https://ww
 
 ❌ Automação de tarefas (Gulp? Grunt? Webpack? 😟 )
 
-### Funcionalidade não exigida
+### Funcionalidades não exigidas
 
 ✅ Hamburguer menu funcional, apesar da opção encontrada não realizar nenhuma ação em si.
 
@@ -52,5 +52,4 @@ Desenvolver uma aplicação HTML5 + CSS3 + JS baseando-se no [LAYOUT](https://ww
 ## Informações adicionais
 - Não foram utilizados bootstrap ou pré-processadores CSS pois não foi deixado claro no enunciado do desafio.
 
-- Para o carousel e lista de produtos foi usada a lib react-slick, apesar de simples utilização encontrei algumas dificuldades em posicionar os elementos e em alguns viewports a aprensentação dos componentes pode ficar estranha, caso houvesse mais tempo para entrega do projeto poderia buscar outra solução, mas essa foi a forma mais rápida que encontrei para implantar a funcionalidade.
-
+- Para o carousel e lista de produtos foi usada a lib react-slick, apesar de simples utilização encontrei algumas dificuldades em posicionar elementos e tratar erros no console, em alguns viewports a aprensentação do componente pode ficar estranha, caso houvesse mais tempo para entrega do projeto poderia buscar outra solução, mas essa foi a forma mais rápida que encontrei para implantar a funcionalidade.

@@ -1,8 +1,8 @@
-import React from 'react'
-import Stars from "../Stars";
-import { toLocalCurrency } from "../../utils";
-import useGlobalContext from "../../Global";
-import * as S from "./styles";
+import React from "react"
+import Stars from "../Stars"
+import { toLocalCurrency } from "../../utils"
+import useGlobalContext from "../../Global"
+import * as S from "./styles"
 
 
 export default function ProductCard({product}) {

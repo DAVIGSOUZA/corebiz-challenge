@@ -30,7 +30,7 @@ export default function ProductsContainer() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 800,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           arrows: false,

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Footer = styled.footer`
   width: 100vw;
@@ -50,5 +50,18 @@ export const FooterButton = styled.button`
   cursor: pointer;
   span {
     margin-left: 8px;
+  }
+  :hover {
+    opacity: 0.9;
+  }
+`
+
+export const LogosWrapper = styled.div`
+  width: 224px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  span {
+    font-size: 10px;
   }
 `

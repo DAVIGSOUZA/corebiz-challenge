@@ -4,7 +4,7 @@ import Carousel from "../../components/Carousel"
 import ProductsContainer from "../../components/ProductsContainer"
 import NewsletterForm from "../../components/NewsletterForm"
 import Footer from "../../components/Footer"
-import { HomeContainer } from "./styles";
+import { HomeContainer } from "./styles"
 
 export default function HomePage() {
   return (

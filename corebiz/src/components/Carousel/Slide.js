@@ -1,6 +1,6 @@
 import React from 'react'
 import bannerImg from "../../assets/banner.png"
-import * as S from "./styles";
+import * as S from "./styles"
 
 export default function Slide() {
   return (

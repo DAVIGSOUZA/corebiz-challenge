@@ -1,7 +1,9 @@
 import React from 'react'
-import { ReactComponent as LogosFooter } from "../../assets/logos-footer.svg"
 import { ReactComponent as EmailIcon } from "../../assets/icon-email.svg"
 import { ReactComponent as PhoneIcon } from "../../assets/icon-phone.svg"
+import { ReactComponent as VtexLogo } from "../../assets/vtex-logo.svg"
+import { ReactComponent as CodebizLogo } from "../../assets/codebiz-white.svg"
+
 import * as S from "./styles"
 
 export default function Footer() {
@@ -36,9 +38,14 @@ export default function Footer() {
           </S.FooterButton>
         </S.ContactWrapper>
 
-        <div>
-          <LogosFooter/>
-        </div>
+        <S.LogosWrapper>
+          <div>
+            <span>Created by</span>
+            <br/>
+            <CodebizLogo/>
+          </div>
+          <VtexLogo/>
+        </S.LogosWrapper>
 
       </S.ContentWrapper>
     </S.Footer>

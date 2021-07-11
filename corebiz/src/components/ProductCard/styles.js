@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Card = styled.div`
   width: 200px;
@@ -15,7 +15,6 @@ export const Card = styled.div`
     }
   }
 `
-
 
 export const ImgWrapper = styled.div`
   position: relative;
@@ -93,4 +92,7 @@ export const Button = styled.button`
   font-weight: 700;
   cursor: pointer;
   transition: 300ms;
+  :hover {
+    background-color: #333333;
+  }
 `

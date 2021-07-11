@@ -1,7 +1,7 @@
 import React from 'react'
-import { ReactComponent as StarSolid } from "../../assets/star-solid.svg";
-import { ReactComponent as StarOutlined } from "../../assets/star-outlined.svg";
-import * as S from "./styles";
+import { ReactComponent as StarSolid } from "../../assets/star-solid.svg"
+import { ReactComponent as StarOutlined } from "../../assets/star-outlined.svg"
+import * as S from "./styles"
 
 export default function Stars({starsReceived}) {
 

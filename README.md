@@ -48,8 +48,15 @@ Desenvolver uma aplicação HTML5 + CSS3 + JS baseando-se no [LAYOUT](https://ww
 
 ✅ Carousel funcional.
 
+❌ Não foi implantada lógica no Search Input
+
+❌ Não foram adicionados loadings/spinners
+
+❌ Feedback ao usuário ao clicar em comprar poderia ser melhorado
 
 ## Informações adicionais
 - Não foram utilizados bootstrap ou pré-processadores CSS pois não foi deixado claro no enunciado do desafio.
+
+- Funcionalidades não exigidas poderiam ser implantadas se houvesse mais tempo para o projeto.
 
 - Para o carousel e lista de produtos foi usada a lib react-slick, apesar de simples utilização encontrei algumas dificuldades em posicionar elementos e tratar erros no console, em alguns viewports a aprensentação do componente pode ficar estranha, caso houvesse mais tempo para entrega do projeto poderia buscar outra solução, mas essa foi a forma mais rápida que encontrei para implantar a funcionalidade.

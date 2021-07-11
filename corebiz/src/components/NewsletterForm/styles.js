@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NewsletterFormContainer = styled.section`
-  width: 99vw;
+  width: 100vw;
   height: 150px;
   background-color: #f2f2f2;
   font-family: "Lato", sans-serif;

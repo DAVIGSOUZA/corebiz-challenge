@@ -24,7 +24,7 @@ export const CarouselContainer = styled.div`
 
 // slide styles
 export const Slide = styled.div`
-  width: 99vw;
+  width: 100vw;
   height: 430px;
   color: #fff;
   background-image: url(${(props) => props.img});

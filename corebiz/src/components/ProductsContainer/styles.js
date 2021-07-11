@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProductsContainer = styled.section`
-  width: 99vw;
+  width: 100vw;
 `
 
 export const ContentWrapper = styled.div`

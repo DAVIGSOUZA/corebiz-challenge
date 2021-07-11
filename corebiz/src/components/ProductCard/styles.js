@@ -62,10 +62,14 @@ export const ProductData = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   transition: 300ms;
 `
 
 export const Title = styled.h2`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   margin: 4px 0;
   font-size: 12px;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProductsContainer = styled.section`
-  width: calc(100% - 20px) !important;
+  width: calc(100% - 20px);
   overflow: hidden;
   margin-left: 20px;
 
@@ -31,26 +31,26 @@ export const Divider = styled.div`
 export const SliderWrapper = styled.div`
   width: 100%;
   max-width: 1200px;
-  height: 350px;
+  height: 400px;
   margin: 0 auto;
-  @media (max-width: 600px) {
-    height: 300px;
-    & .slick-dots {
-      bottom: 4px;
-      & .slick-active {
-        button {
-          background-color: #f8475f;
-        }
-      }
+  & .slick-dots {
+    bottom: 4px;
+    & .slick-active {
       button {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background-color: #bdbdbd;
-        ::before {
-          content: "";
-        }
+        background-color: #f8475f;
       }
     }
+    button {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #bdbdbd;
+      ::before {
+        content: "";
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    height: 300px;
   } 
 `

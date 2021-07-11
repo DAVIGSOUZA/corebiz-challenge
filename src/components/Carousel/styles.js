@@ -46,6 +46,7 @@ export const SlideContent = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 150px;
+    padding-left: 32px;
     @media (max-width: 600px) {
       padding-top: 32px;
       padding-left: 8px;

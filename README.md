@@ -6,13 +6,13 @@ Desenvolver uma aplicação HTML5 + CSS3 + JS baseando-se no [LAYOUT](https://ww
 [https://corebiz-challenge-mu.vercel.app/](https://corebiz-challenge-mu.vercel.app/)
 
 ### Tecnologias adotadas
--[React](https://reactjs.org/)
+- [React](https://reactjs.org/)
 
--[Axios](https://www.npmjs.com/package/axios)
+- [Axios](https://www.npmjs.com/package/axios)
 
--[Styled-components](https://styled-components.com/)
+- [Styled-components](https://styled-components.com/)
 
--[React-Slick](https://react-slick.neostack.com/)
+- [React-Slick](https://react-slick.neostack.com/)
 
 ### Para rodar o projeto localmente
 1. Clonar o repósitório

@@ -55,7 +55,7 @@ Desenvolver uma aplicação HTML5 + CSS3 + JS baseando-se no [LAYOUT](https://ww
 ❌ Feedback ao usuário ao clicar em comprar poderia ser melhorado
 
 ## Informações adicionais
-- Não foram utilizados bootstrap ou pré-processadores CSS pois não foi deixado claro no enunciado do desafio.
+- Não foram utilizados bootstrap ou pré-processadores CSS pois não foi deixado claro no enunciado do desafio se era permitido.
 
 - Funcionalidades não exigidas poderiam ser implantadas se houvesse mais tempo para o projeto.
 
